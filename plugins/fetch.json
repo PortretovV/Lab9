@@ -94,5 +94,25 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "pushwoosh-cordova-plugin": {
+    "source": {
+      "type": "registry",
+      "id": "pushwoosh-cordova-plugin@~7.0.4"
+    },
+    "is_top_level": true,
+    "variables": {
+      "LOG_LEVEL": "DEBUG",
+      "IOS_FOREGROUND_ALERT_TYPE": "BANNER",
+      "ANDROID_FOREGROUND_PUSH": "false"
+    }
+  },
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

@@ -36,6 +36,15 @@
     },
     "cordova-plugin-vibration": {
       "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "pushwoosh-cordova-plugin": {
+      "LOG_LEVEL": "DEBUG",
+      "IOS_FOREGROUND_ALERT_TYPE": "BANNER",
+      "ANDROID_FOREGROUND_PUSH": "false",
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
     }
   },
   "dependent_plugins": {

@@ -31,9 +31,9 @@ var app = {
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
+    // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
+        app.receivedEvent('Сделай фотку, нажми на красную кнопку');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -45,5 +45,18 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    },
+
+    takePicture: function() {
+      navigator.camera.getPicture( function( imageURI ) {
+        alert( imageURI );
+      },
+      function( message ) {
+        alert( message );
+      },
+      {
+        quality: 50,
+        destinationType: Camera.DestinationType.FILE_URI
+      });
     }
 };
